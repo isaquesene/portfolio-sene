@@ -58,8 +58,8 @@ const Nav = () => {
         {navData.map((link, index) => {
           return (
             <Link className={
-              `${link.path === pathname && 'text-accent'}
-                realtive flex items-center group hover:text-accent
+              `${link.path === pathname && 'text-cubes'}
+                realtive flex items-center group hover:text-cubes
                 transition-all duration-300
               `} href={link.path} key={index}>
                 {/* tooltip */}

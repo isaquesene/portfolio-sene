@@ -25,9 +25,11 @@ module.exports = {
         primary: '#131424',
         secondary: '#393A47',
         accent: '#F13024',
+        cubes: '#2cffff',
       },
       backgroundImage: {
         explosion: 'url("/bg-explosion.png")',
+        cube: 'url("/bg-cube.png")',
         circles: 'url("/bg-circles.png")',
         circleStar: 'url("/circle-star.svg")',
         site: 'url("/site-bg.svg")',
