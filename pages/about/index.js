@@ -5,19 +5,19 @@ const aboutData = [
     info: [
       {
         title: 'Web Development',
-        icons: [
+        /* icons: [
           <FaHtml5 />,
           <FaCss3 />,
           <FaJs />,
           <FaReact />,
           <SiNextdotjs />,
           <SiFramer />,
-          <FaWordpress />,
-        ],
+          <FaWordpress />, 
+        ], */
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        /* icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />], */
       },
     ],
   },
