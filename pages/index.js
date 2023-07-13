@@ -34,8 +34,8 @@ const Home = () => {
         variants={fadeIn('down', 0.3)} initial="hidden" animate="show" exit="hidden"
         className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
         >
-          Hi! My name is Isaque Sene, and I m Web and Software Developer. 
-          With a passion for creating innovative solutions, I am constantly up to date with the latest technology trends. 
+          Hey! My name is Isaque Sene, I m a web and software developer.
+          I have a passion for creating innovative solutions, I am constantly updated with the latest technological trends. 
         </motion.p>
         {/* btn */}
         <div className="flex justify-center xl:hidden relative">
