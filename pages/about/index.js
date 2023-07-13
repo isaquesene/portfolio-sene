@@ -1,5 +1,24 @@
+import React, {useState} from "react";
+
+// icons
+import {
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaReact,
+  FaWordpress,
+  FaFigma,
+} from 'react-icons/fa';
+
+import {
+  SiNextdotjs,
+  SiFramer,
+  SiAdobexd,
+  SiAdobephotoshop,
+} from 'react-icons/si';
+
 //  data
-const aboutData = [
+export const aboutData = [
   {
     title: 'skills',
     info: [
@@ -70,8 +89,18 @@ const aboutData = [
   },
 ];
 
+import Avatar from "../../components/Avatar";
+
+import Circles from "../../components/Circles";
+
 const About = () => {
-  return <div>About</div>;
+  const [index, setIndex] = useState(0);
+  return (
+  <div>
+    <Circles/>
+    {/* avatar */}
+  </div>
+  );
 };
 
 export default About;
