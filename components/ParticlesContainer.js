@@ -34,7 +34,7 @@ const ParticlesContainer = () => {
           },
           onHover:{
             enable: true,
-            mode: 'repuse',
+            mode: 'repulse',
           },
           resize: true,
         },
@@ -44,9 +44,9 @@ const ParticlesContainer = () => {
           },
           repulse: {
             distance: 200,
-            duration: 0.4,
-          }
-        }
+            duration: 0.4
+          },
+        },
       },
       particles:{
         color: {
@@ -82,8 +82,14 @@ const ParticlesContainer = () => {
         opacity: {
           value: 0.5,
         },
-
+        shape: {
+          type: 'circle'
+        },
+        size: {
+          value: {min: 1, max: 5},
+        },
       },
+      detectRetina: true,
     }}
   />
  
