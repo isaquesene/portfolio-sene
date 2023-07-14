@@ -6,6 +6,7 @@ import {
   RiInstagramLine,
   RiWhatsappLine,
   RiGithubLine,
+  RiLinkedinLine,
 } from 'react-icons/ri';
 
 const Socials = () => {
@@ -19,6 +20,9 @@ const Socials = () => {
       </Link>
       <Link href={'https://github.com/isaquesene'} className="hover:text-cubes transition-all duration-300">
         <RiGithubLine/>
+      </Link>
+      <Link href={'https://www.linkedin.com/in/isaque-luis-sene-1532a3194/'} className="hover:text-cubes transition-all duration-300">
+        <RiLinkedinLine/>
       </Link>
     </div>
   );

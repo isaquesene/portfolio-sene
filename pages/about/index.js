@@ -99,6 +99,9 @@ const About = () => {
   <div>
     <Circles/>
     {/* avatar */}
+    <div>
+      {/* <Avatar/> */}
+    </div>
   </div>
   );
 };
