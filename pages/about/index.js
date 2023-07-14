@@ -8,6 +8,7 @@ import {
   FaReact,
   FaWordpress,
   FaFigma,
+  FaAngular,
 } from 'react-icons/fa';
 
 import {
@@ -15,6 +16,7 @@ import {
   SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
+  SiPhp,
 } from 'react-icons/si';
 
 //  data
@@ -23,33 +25,33 @@ export const aboutData = [
     title: 'skills',
     info: [
       {
-        title: 'Web Development',
-        /* icons: [
+        title: 'Web & software Development',
+        icons: [
           <FaHtml5 />,
           <FaCss3 />,
           <FaJs />,
           <FaReact />,
           <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />, 
-        ], */
+          <SiPhp />,
+          <FaAngular />, 
+        ],
       },
       {
         title: 'UI/UX Design',
-        /* icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />], */
+        icons: [<FaFigma />],
       },
     ],
   },
   {
-    title: 'awards',
+    title: 'licenses',
     info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
+        title: 'PHP: Arrays, Strings, Function and Web - Alura',
+        stage: '2023',
       },
       {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: 'React.JS FullStack - Alura',
+        stage: '2023',
       },
     ],
   },
@@ -57,16 +59,16 @@ export const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'FullStack, Php Web Developer - ITA Ventures',
+        stage: '01/2023 - 07/2023',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: 'Web Developer Php Pleno - AI-SSIE DCTA',
+        stage: '2016 - 2023',
       },
       {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'web Developer Php - Hex Software',
+        stage: '01/2023 - 07/2023',
       },
     ],
   },
@@ -74,16 +76,8 @@ export const aboutData = [
     title: 'credentials',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
-      },
-      {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
-      },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Tecnico, Desenvolvimento de Sistemas - ETEC',
+        stage: '2014 - 2016',
       },
     ],
   },
@@ -96,7 +90,7 @@ import Circles from "../../components/Circles";
 //framer motion
 import { motion } from 'framer-motion';
 
-import { fadeIn } from '../../variants'
+import { fadeIn } from '../../variants';
 
 
 
@@ -111,8 +105,8 @@ const About = () => {
       <Avatar/>
     </motion.div> */}
     <div className="container mx-auto h-full flex flex-col items-center xl:flex-row">
-      <div>text</div>
-      <div>
+      <div className="flex-1 flex flex-col justify-center">text</div>
+      <div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
         <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
           {
             aboutData.map((item, itemIndex) => {
@@ -130,12 +124,20 @@ const About = () => {
             })
           }
         </div>
-        <div>
+        <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
           {aboutData[index].info.map((item, itemIndex)=>{
             return(
               <div key={itemIndex}>
                 {/* title */}
                 <div>{item.title}</div>
+                <div className="hidden md:flex">-</div>
+                <div>{item.stage}</div>
+                <div className="flex gap-x-4">
+                {/* icons */}
+                {item.icons?.map((icon, itemIndex) => {
+                  return <div>{icon}</div>;
+                })}
+                </div>
               </div>
             );  
           })}
