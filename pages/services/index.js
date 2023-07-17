@@ -23,7 +23,9 @@ const Services = () => {
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-x-8'>
           {/* text */}
-          <div>text</div>
+          <div>
+            <h2 className='h2 xl:mt-8'>My services <span className='text-cubes'>.</span></h2>
+          </div>
           {/* slider */}
           <ServiceSlider/>
         </div>
