@@ -1,5 +1,5 @@
 // icons
-import {} from 'react-icons/rx';
+import { RxSlider } from 'react-icons/rx';
 
 //service data
 export const serviceData = [];
@@ -20,7 +20,14 @@ const Services = () => {
   return (
     <div className='h-full bg-primary/30 py-36 flex items-center'>
       <Circles/>
-      <div className='container mx-auto'></div>
+      <div className='container mx-auto'>
+        <div className='flex flex-col xl:flex-row gap-x-8'>
+          {/* text */}
+          <div>text</div>
+          {/* slider */}
+          <ServiceSlider/>
+        </div>
+      </div>
       <Bulb/>
     </div>
   );
