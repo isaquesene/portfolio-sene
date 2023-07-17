@@ -27,7 +27,7 @@ const Services = () => {
             </motion.p>
           </div>
           {/* slider */}
-          <motion.div variants={fadeIn('up', 0.3)} initial="hidden" animate="show" exit="hidden"
+          <motion.div variants={fadeIn('down', 0.3)} initial="hidden" animate="show" exit="hidden"
           className='w-full xl:max-w-[65%]'>
           <ServiceSlider/>
           </motion.div>
