@@ -116,7 +116,7 @@ const About = () => {
           animate="show" 
           exit="hidden"
           className="h2"
-        >A tittle <span className="text-cubes">more</span> about my work.</motion.h2>
+        >A little <span className="text-cubes">more</span> about my work.</motion.h2>
         <motion.p 
         variants={fadeIn('right', 0.4)} 
         initial="hidden" 
