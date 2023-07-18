@@ -82,6 +82,20 @@ const WorkSlider = () => {
                       {/* image */}
                       <Image src={image.path} width={500} height={300} alt=''/>
                       {/* overlay gradient */}
+                      <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#2cffff] to-[#090522] 
+                      opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
+                      {/* title */}
+                      <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20
+                      transition-all duration-300'>
+                        <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
+                          {/* title part 1 */}
+                          <div>title part 1</div>
+                          {/* title part 2 */}
+                          <div>title part 2</div>
+                          {/* icon */}
+                          <div>icon</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 );
