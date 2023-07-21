@@ -4,28 +4,28 @@ export const workSlider = {
     {
       images: [
         {
-          title: 'title',
-          path: '/landing_page_clicadoc.png',
+          title: 'Clicadoc',
+          path: '/clicadoc_landing.png',
         },
         {
-          title: 'title',
-          path: '/clicadoc_sistem.png',
+          title: 'Clicadoc',
+          path: '/clicadoc_system.png',
         },
         {
-          title: 'title',
-          path: '/thumb3.jpg',
+          title: 'Condeclin',
+          path: '/condeclin.png',
         },
         {
-          title: 'title',
-          path: '/thumb4.jpg',
+          title: 'Arena',
+          path: '/arena.png',
         },
       ],
     },
     {
       images: [
         {
-          title: 'title',
-          path: '/thumb4.jpg',
+          title: 'Locus',
+          path: '/locus.png',
         },
         {
           title: 'title',
@@ -82,7 +82,7 @@ const WorkSlider = () => {
                       {/* image */}
                       <Image src={image.path} width={500} height={300} alt=''/>
                       {/* overlay gradient */}
-                      <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#090522] 
+                      <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#008e8e] to-[#28e9e9] 
                       opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
                       {/* title */}
                       <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20
