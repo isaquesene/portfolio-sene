@@ -28,12 +28,12 @@ export const workSlider = {
           path: '/locus.png',
         },
         {
-          title: 'title',
-          path: '/thumb1.jpg',
+          title: 'TopService',
+          path: '/topservice.png',
         },
         {
-          title: 'title',
-          path: '/thumb2.jpg',
+          title: 'ContFlux',
+          path: '/contflux.png',
         },
         {
           title: 'title',
