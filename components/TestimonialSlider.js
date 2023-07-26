@@ -3,7 +3,7 @@ const testimonialSlider = [
   {
     image: '/profile_sene.png',
     name: 'Isaque Sene',
-/*     position: 'FullStack Developer', */
+    position: '25 years',
     message:
       'Hello, my name is Isaque Sene, I served the Brazilian Air Force for 8 years, I ve always had a great passion for technology, I m migrating from an area, I want to become a great Developer. Today I work as a PJ, freelance Fullstatrack Web Developer.',
   },
@@ -28,11 +28,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // import swiper styles
 import 'swiper/css';
-import 'swiper/css/free-mode';
+/* import 'swiper/css/free-mode'; */
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 //import required modules
-import { Pagination } from 'swiper';
+import { Navigation, Pagination } from 'swiper';
 
 // icons
 import { FaQuoteLeft } from 'react-icons/fa';
@@ -42,12 +43,13 @@ import Image from 'next/image';
  
 const TestimonialSlider = () => {
   return <Swiper 
-  spaceBetween={10}
+  navigation={true}
+  /* spaceBetween={10} */
   pagination={{
     clickable: true
   }}
-  modules={[Pagination]}
-  className='h-[350px] sm:h-[480px]'
+  modules={[Navigation, Pagination]}
+  className='h-[400px]'
   >
     {testimonialSlider.map((person, index) => {
         return(
@@ -63,7 +65,7 @@ const TestimonialSlider = () => {
                   {/* nome */}
                   <div className='text-lg'>{person.name}</div>
                   {/* positon */}
-                  {/* <div>position</div> */}
+                  <div className='text-[12px] uppercase font-extralight'>{person.position}</div>
                  </div>
               </div>
               {/* messagem */}
