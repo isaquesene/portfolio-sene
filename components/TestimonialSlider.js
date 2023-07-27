@@ -5,7 +5,7 @@ const testimonialSlider = [
     name: 'Isaque Sene',
     position: '25 years',
     message:
-      'Hello, my name is Isaque Sene, I served the Brazilian Air Force for 8 years, I ve always had a great passion for technology, I m migrating from an area, I want to become a great Developer. Today I work as a PJ, freelance Fullstack Web Developer.',
+      'Hey, I am Isaque Sene. My passion is leveraging technology and creativity to address problems and fulfill needs. I currently work as a Legal Entity - PJ and a freelance full-stack developer.',
   },
   /* {
     image: '/t-avt-2.png',

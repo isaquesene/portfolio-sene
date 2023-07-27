@@ -23,7 +23,7 @@ const Work = () => {
             <motion.p variants={fadeIn('up', 0.4)} initial="hidden" animate="show" exit="hidden"
             className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
            These projects were developed in Php via Ajax, codeigniter framework, React.js & Angular. 
-           Projects aimed at the Clinical area and others.
+           Projects aimed for different purposes, as: health, sports, stock and service hiring.
             </motion.p>
           </div>
           {/* slider */}

@@ -22,7 +22,7 @@ const Services = () => {
             className='h2 xl:mt-8'>My services <span className='text-cubes'>.</span></motion.h2>
             <motion.p variants={fadeIn('up', 0.4)} initial="hidden" animate="show" exit="hidden"
             className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-            I m a software and web developer, focus on react js, next.js, Php, Ajax, Angular. 
+            I m a software and web developer, the main languages I work with are react js, next.js, Php, Ajax, Angular. 
             I create technological solutions for companies and startups.
             </motion.p>
           </div>

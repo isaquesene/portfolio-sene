@@ -54,6 +54,10 @@ export const aboutData = [
         title: 'React.JS FullStack - Alura',
         stage: '2023',
       },
+      {
+        title: 'Angular Framework - Alura',
+        stage: '2023',
+      },
     ],
   },
   {
@@ -77,7 +81,7 @@ export const aboutData = [
     title: 'credentials',
     info: [
       {
-        title: 'Tecnico, Desenvolvimento de Sistemas - ETEC',
+        title: 'System Development - ETEC Technical School',
         stage: '2014 - 2016',
       },
     ],
@@ -123,8 +127,8 @@ const About = () => {
         animate="show" 
         exit="hidden"
         className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-          I started as a freelance developer. Since then,
-          done remote work consulted for startups,
+          I started as a freelance developer, since then, 
+          I have provided consulting and developing services for tech companies, and
           collaborated on digital products for business.
         </motion.p>
         {/* counters */}
@@ -152,7 +156,7 @@ const About = () => {
                   <CountUp start={0} end={37} duration={5}/> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Finished ProjectsBtn
+                  Finished Projects
                 </div>
               </div>
           </div>
