@@ -11,7 +11,9 @@ import {
   FaAngular,
 } from 'react-icons/fa';
 
-import { SiBootstrap, SiNextdotjs, SiPhp } from 'react-icons/si';
+import { SiBootstrap, SiNextdotjs, SiPhp, SiCsharp } from 'react-icons/si';
+
+
 
 // data
 export const workSlider = {
@@ -19,7 +21,7 @@ export const workSlider = {
     {
       images: [
         {
-          title: 'Clicadoc',
+          title: 'CLICADOC',
           path: '/clicadoc_landing.png',
           icons: [
             <FaHtml5 key="html5" />,
@@ -32,7 +34,7 @@ export const workSlider = {
           ],
         },
         {
-          title: 'Clicadoc',
+          title: 'CLICADOC',
           path: '/clicadoc_system.png',
           icons: [
             <FaHtml5 key="html5" />,
@@ -45,7 +47,7 @@ export const workSlider = {
           ],
         },
         {
-          title: 'Condeclin',
+          title: 'CONDECLIN',
           path: '/condeclin.png',
           icons: [
             <FaHtml5 key="html5" />,
@@ -58,7 +60,7 @@ export const workSlider = {
           ],
         },
         {
-          title: 'Arena',
+          title: 'ARENA',
           path: '/arena.png',
           icons: [
             <FaHtml5 key="html5" />,
@@ -75,7 +77,7 @@ export const workSlider = {
     {
       images: [
         {
-          title: 'Locus',
+          title: 'LOCUS',
           path: '/locus.png',
           icons: [
             <FaHtml5 key="html5" />,
@@ -88,12 +90,30 @@ export const workSlider = {
           ],
         },
         {
-          title: 'TopService',
+          title: 'TOP SERVICE',
           path: '/topservice.png',
+          icons: [
+            <FaHtml5 key="html5" />,
+            <FaCss3 key="css3" />,
+            <FaJs key="js" />,
+            /* <FaReact key="react" />, */
+            <SiCsharp key="next" />,
+            <SiPhp key="php" />,
+            /* <FaCodeigniter key="angular" />, */
+          ],
         },
         {
-          title: 'ContFlux',
+          title: 'CONTFLUX',
           path: '/contflux.png',
+          icons: [
+            /* <FaHtml5 key="html5" />,
+            <FaCss3 key="css3" />, */
+            <FaJs key="js" />,
+            /* <FaReact key="react" />, */
+            <SiCsharp key="next" />,
+            /* <SiPhp key="php" />, */
+            /* <FaCodeigniter key="angular" />, */
+          ],
         },
         {
           title: 'title',
@@ -147,14 +167,14 @@ const WorkSlider = () => {
                       transition-all duration-300'>
                     <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
                       {/* title part 1 */}
-                      <div className='delay-100'>LIVE</div>
+                      {/* <div className='delay-100'>Project: </div> */}
                       {/* title part 2 */}
                       <div className='translate-y-[500%] group-hover:translate-y-0
-                          transiiton-all duration-300 delay-150'>PROJECT</div>
-                      {/* icon */}
+                          transiiton-all duration-300 delay-150'>{image.title}</div>
+                      {/* {/* icon 
                       <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'>
                         <BsArrowRight />
-                      </div>
+                      </div> */}
                     </div>
                     {/* icons */}
                     {image.icons && (
